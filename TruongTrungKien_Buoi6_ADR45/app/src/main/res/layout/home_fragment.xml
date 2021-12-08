@@ -11,17 +11,17 @@
             android:layout_height="0dp"
             android:layout_weight="0.65">
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvNameWelcome"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text=""-->
-<!--                android:layout_centerInParent="true"-->
-<!--                android:layout_alignParentLeft="true"-->
-<!--                android:textStyle="bold"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:textSize="25sp"-->
-<!--                android:layout_marginLeft="15sp"/>-->
+            <TextView
+                android:id="@+id/tvNameWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:layout_marginLeft="15sp"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="40dp"
