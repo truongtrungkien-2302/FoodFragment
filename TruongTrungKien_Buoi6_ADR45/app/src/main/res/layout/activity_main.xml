@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+
+        <FrameLayout
+            android:id="@+id/fragmentID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linearMenu" />
+
+        <LinearLayout
+            android:id="@+id/linearMenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:background="@color/color_menu"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_home_24" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:background="@color/color_menu"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_assignment_24" />
+
+            <ImageView
+                android:id="@+id/imgCart"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+            <ImageView
+                android:id="@+id/imgFavorite"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/color_menu"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_favorite_border_24" />
+
+            <ImageView
+                android:id="@+id/imgChat"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/color_menu"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_chat_24" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>
