@@ -1,11 +1,13 @@
 package com.android45.truongtrungkien_buoi6_adr45.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,7 +41,6 @@ public class HomeFragment extends Fragment {
         return fragment;
     }
 
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //        homeFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.home_fragment, container, false);
 //        return homeFragmentBinding.getRoot();
@@ -47,7 +48,6 @@ public class HomeFragment extends Fragment {
         addRecycleViewRecommended();
         addRecycleViewNew();
         return view;
-
     }
 
     private void addRecycleViewRecommended() {
