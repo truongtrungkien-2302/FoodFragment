@@ -82,38 +82,10 @@ public class FragmentActivity extends AppCompatActivity {
             }
         });
 
-        activityFragmentBinding.imgMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getFragment(MenuFragment.newInstance());
-                activityFragmentBinding.imgMenu.setOnTouchListener(new View.OnTouchListener() {
-                    @Override
-                    public boolean onTouch(View v, MotionEvent event) {
-                        switch (event.getAction()) {
-                            case MotionEvent.ACTION_DOWN: {
-                                ImageView view = (ImageView) v;
-                                view.invalidate();
-                                view.getDrawable().setColorFilter(Color.BLACK, PorterDuff.Mode.MULTIPLY);
-                                break;
-                            }
-                            case MotionEvent.ACTION_UP:
-                            case MotionEvent.ACTION_CANCEL: {
-                                ImageView view = (ImageView) v;
-                                view.getDrawable().clearColorFilter();
-                                view.invalidate();
-                                break;
-                            }
-                        }
-                        return false;
-                    }
-                });
-            }
-        });
-
         activityFragmentBinding.imgCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragment(MenuFragment.newInstance());
+//                getFragment(Ca.newInstance());
                 activityFragmentBinding.imgCart.setOnTouchListener(new View.OnTouchListener() {
                     @Override
                     public boolean onTouch(View v, MotionEvent event) {
@@ -141,7 +113,7 @@ public class FragmentActivity extends AppCompatActivity {
         activityFragmentBinding.imgFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragment(MenuFragment.newInstance());
+                getFragment(FavortieFragment.newInstance());
                 activityFragmentBinding.imgFavorite.setOnTouchListener(new View.OnTouchListener() {
                     @Override
                     public boolean onTouch(View v, MotionEvent event) {

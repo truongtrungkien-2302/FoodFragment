@@ -1,6 +1,9 @@
 package com.android45.truongtrungkien_buoi6_adr45.model;
 
-public class New {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class New implements Parcelable {
     int imgFoodNew;
     int imgFavoriteNew;
     String tvNameFoodNew;
@@ -14,6 +17,26 @@ public class New {
         this.rbStarNew = rbStarNew;
         this.tvMoneyNew = tvMoneyNew;
     }
+
+    protected New(Parcel in) {
+        imgFoodNew = in.readInt();
+        imgFavoriteNew = in.readInt();
+        tvNameFoodNew = in.readString();
+        rbStarNew = in.readFloat();
+        tvMoneyNew = in.readString();
+    }
+
+    public static final Creator<New> CREATOR = new Creator<New>() {
+        @Override
+        public New createFromParcel(Parcel in) {
+            return new New(in);
+        }
+
+        @Override
+        public New[] newArray(int size) {
+            return new New[size];
+        }
+    };
 
     public int getImgFoodNew() {
         return imgFoodNew;
@@ -53,5 +76,19 @@ public class New {
 
     public void setTvMoneyNew(String tvMoneyNew) {
         this.tvMoneyNew = tvMoneyNew;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(imgFoodNew);
+        dest.writeInt(imgFavoriteNew);
+        dest.writeString(tvNameFoodNew);
+        dest.writeFloat(rbStarNew);
+        dest.writeString(tvMoneyNew);
     }
 }

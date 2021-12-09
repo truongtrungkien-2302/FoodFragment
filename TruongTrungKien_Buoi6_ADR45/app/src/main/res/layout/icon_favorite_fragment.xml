@@ -2,79 +2,79 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="190dp"
     android:layout_height="240dp"
-    android:layout_margin="7sp"
+    android:layout_margin="8sp"
     android:background="@drawable/custom_layout_menu2">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgFoodNew"
+        android:id="@+id/imgFoodFavorite"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="10sp"
-        android:src="@drawable/chicken" />
+        android:src="@drawable/salmonsalad" />
 
     <ImageView
-        android:id="@+id/imgFavoriteNew"
+        android:id="@+id/imgFavorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="15sp"
-        android:layout_toRightOf="@id/imgFoodNew"
+        android:layout_toRightOf="@id/imgFoodFavorite"
         android:layout_weight="1"
-        android:src="@drawable/ic_baseline_favorite2_border_24" />
+        android:src="@drawable/ic_baseline_favorite3_24" />
 
     <TextView
-        android:id="@+id/tvNameFoodNew"
+        android:id="@+id/tvNameFoodFavorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgFoodNew"
+        android:layout_below="@id/imgFoodFavorite"
         android:layout_marginLeft="20sp"
         android:layout_marginTop="8sp"
-        android:text="Chicken Salad"
+        android:text="Salmon Salad"
         android:textColor="@color/black"
         android:textSize="19sp"
         android:textStyle="bold" />
 
     <RatingBar
-        android:id="@+id/rbStarNew"
+        android:id="@+id/rbStarFavorite"
         style="@style/Widget.AppCompat.RatingBar.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvNameFoodNew"
+        android:layout_below="@id/tvNameFoodFavorite"
         android:layout_marginLeft="20sp"
         android:numStars="5"
-        android:rating="4"
-        android:progressTint="@color/color_progessBar" />
+        android:progressTint="@color/color_progessBar"
+        android:rating="4" />
 
     <ImageView
-        android:id="@+id/imgMoneyNew"
+        android:id="@+id/imgMoneyFavorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20sp"
         android:src="@drawable/ic_baseline_attach_money_24"
-        android:layout_below="@id/rbStarNew"/>
+        android:layout_below="@id/rbStarFavorite" />
 
     <TextView
-        android:id="@+id/tvMoneyNew"
+        android:id="@+id/tvMoneyFavorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rbStarNew"
+        android:layout_below="@id/rbStarFavorite"
         android:layout_marginTop="0.3sp"
-        android:layout_toRightOf="@id/imgMoneyNew"
-        android:text="7.5"
+        android:layout_toRightOf="@id/imgMoneyFavorite"
+        android:text="14.8"
         android:textColor="@color/black"
         android:textSize="17sp"
         android:textStyle="bold" />
 
     <RelativeLayout
-        android:id="@+id/btnAddNew"
+        android:id="@+id/btnAddFavorite"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15sp"
-        android:layout_marginRight="15sp">
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="15sp">
 
         <ImageView
             android:layout_width="80dp"

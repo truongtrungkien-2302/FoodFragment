@@ -78,12 +78,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email/Username"
+                android:drawableStart="@drawable/ic_baseline_account_circle_24"
                 android:inputType="text" />
 
             <EditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
                 android:layout_below="@id/etUsername"
                 android:hint="Password"
                 android:inputType="textPassword" />

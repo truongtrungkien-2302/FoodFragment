@@ -13,24 +13,16 @@
             android:layout_weight="0.65">
 
             <TextView
-                android:id="@+id/tvNameWelcome"
+                android:id="@+id/tvNameMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="15sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
                 android:text="Menu"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="15sp"
-                android:src="@drawable/lee" />
 
         </RelativeLayout>
 
@@ -193,8 +185,18 @@
                         app:layout_constraintGuide_percent="0.975" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang2"
+                        app:layout_constraintEnd_toEndOf="@id/doc2"
+                        app:layout_constraintStart_toStartOf="@id/doc1"
+                        app:layout_constraintTop_toTopOf="@id/ngang1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgSalad"
                         android:layout_width="0sp"
+                        android:layout_margin="8sp"
                         android:layout_height="0sp"
                         android:src="@drawable/salads"
                         app:layout_constraintBottom_toBottomOf="@id/ngang2"
@@ -206,7 +208,7 @@
                         android:id="@+id/tvSalads"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang3"
@@ -217,9 +219,18 @@
                         android:text="Salads" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/imgMainDishes"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang2"
+                        app:layout_constraintEnd_toEndOf="@id/doc4"
+                        app:layout_constraintStart_toStartOf="@id/doc3"
+                        app:layout_constraintTop_toTopOf="@id/ngang1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:layout_margin="8sp"
                         android:src="@drawable/maindishes"
                         app:layout_constraintBottom_toBottomOf="@id/ngang2"
                         app:layout_constraintEnd_toEndOf="@id/doc4"
@@ -230,7 +241,7 @@
                         android:id="@+id/tvMainDishes"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang3"
@@ -241,9 +252,19 @@
                         android:text="Main Dishes" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang2"
+                        app:layout_constraintEnd_toEndOf="@id/doc6"
+                        app:layout_constraintStart_toStartOf="@id/doc5"
+                        app:layout_constraintTop_toTopOf="@id/ngang1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgSoups"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
+                        android:layout_margin="8sp"
                         android:src="@drawable/soups"
                         app:layout_constraintBottom_toBottomOf="@id/ngang2"
                         app:layout_constraintEnd_toEndOf="@id/doc6"
@@ -254,7 +275,7 @@
                         android:id="@+id/tvSoups"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang3"
@@ -265,9 +286,19 @@
                         android:text="Soups" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang5"
+                        app:layout_constraintEnd_toEndOf="@id/doc2"
+                        app:layout_constraintStart_toStartOf="@id/doc1"
+                        app:layout_constraintTop_toTopOf="@id/ngang4" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgPaste"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
+                        android:layout_margin="8sp"
                         android:src="@drawable/paste"
                         app:layout_constraintBottom_toBottomOf="@id/ngang5"
                         app:layout_constraintEnd_toEndOf="@id/doc2"
@@ -278,7 +309,7 @@
                         android:id="@+id/tvPaste"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang6"
@@ -289,9 +320,19 @@
                         android:text="Paste" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang5"
+                        app:layout_constraintEnd_toEndOf="@id/doc4"
+                        app:layout_constraintStart_toStartOf="@id/doc3"
+                        app:layout_constraintTop_toTopOf="@id/ngang4" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgPizza"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
+                        android:layout_margin="8sp"
                         android:src="@drawable/pizza"
                         app:layout_constraintBottom_toBottomOf="@id/ngang5"
                         app:layout_constraintEnd_toEndOf="@id/doc4"
@@ -302,7 +343,7 @@
                         android:id="@+id/tvPizza"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang6"
@@ -313,10 +354,20 @@
                         android:text="Pizza" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang5"
+                        app:layout_constraintEnd_toEndOf="@id/doc6"
+                        app:layout_constraintStart_toStartOf="@id/doc5"
+                        app:layout_constraintTop_toTopOf="@id/ngang4" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgDesserts"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
                         android:src="@drawable/desserts"
+                        android:layout_margin="8sp"
                         app:layout_constraintBottom_toBottomOf="@id/ngang5"
                         app:layout_constraintEnd_toEndOf="@id/doc6"
                         app:layout_constraintStart_toStartOf="@id/doc5"
@@ -326,7 +377,7 @@
                         android:id="@+id/tvDesserts"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang6"
@@ -337,9 +388,19 @@
                         android:text="Desserts" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang8"
+                        app:layout_constraintEnd_toEndOf="@id/doc2"
+                        app:layout_constraintStart_toStartOf="@id/doc1"
+                        app:layout_constraintTop_toTopOf="@id/ngang7" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgHotDrinks"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
+                        android:layout_margin="8sp"
                         android:src="@drawable/hotdrinks"
                         app:layout_constraintBottom_toBottomOf="@id/ngang8"
                         app:layout_constraintEnd_toEndOf="@id/doc2"
@@ -350,7 +411,7 @@
                         android:id="@+id/tvHotDrinks"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang9"
@@ -361,10 +422,20 @@
                         android:text="Hot Drinks" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang8"
+                        app:layout_constraintEnd_toEndOf="@id/doc4"
+                        app:layout_constraintStart_toStartOf="@id/doc3"
+                        app:layout_constraintTop_toTopOf="@id/ngang7" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgColdDrinks"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
                         android:src="@drawable/colddrinks"
+                        android:layout_margin="8sp"
                         app:layout_constraintBottom_toBottomOf="@id/ngang8"
                         app:layout_constraintEnd_toEndOf="@id/doc4"
                         app:layout_constraintStart_toStartOf="@id/doc3"
@@ -374,7 +445,7 @@
                         android:id="@+id/tvColdDrinks"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang9"
@@ -385,9 +456,19 @@
                         android:text="Cold Drinks" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:background="@drawable/custom_layout_menu2"
+                        app:layout_constraintBottom_toBottomOf="@id/ngang8"
+                        app:layout_constraintEnd_toEndOf="@id/doc6"
+                        app:layout_constraintStart_toStartOf="@id/doc5"
+                        app:layout_constraintTop_toTopOf="@id/ngang7" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgAlcohol"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
+                        android:layout_margin="8sp"
                         android:src="@drawable/alcohol"
                         app:layout_constraintBottom_toBottomOf="@id/ngang8"
                         app:layout_constraintEnd_toEndOf="@id/doc6"
@@ -398,7 +479,7 @@
                         android:id="@+id/tvAlcohol"
                         android:layout_width="0sp"
                         android:layout_height="0sp"
-                        android:textSize="17sp"
+                        android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/ngang9"
