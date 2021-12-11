@@ -19,6 +19,7 @@ import com.android45.truongtrungkien_buoi6_adr45.data.RecommendedData;
 import com.android45.truongtrungkien_buoi6_adr45.databinding.HomeFragmentBinding;
 import com.android45.truongtrungkien_buoi6_adr45.model.New;
 import com.android45.truongtrungkien_buoi6_adr45.model.Recommended;
+import com.android45.truongtrungkien_buoi6_adr45.my_interface.IOnClickItemNew;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,19 +51,32 @@ public class HomeFragment extends Fragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        homeFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.icon_home_fragment, container, false);
+        homeFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.home_fragment, container, false);
 
-        //        return homeFragmentBinding.getRoot();
         view = inflater.inflate(R.layout.home_fragment, container, false);
         addRecycleViewRecommended();
         addRecycleViewNew();
+
         return view;
+
     }
 
     private void addRecycleViewNew() {
         rvNew = view.findViewById(R.id.rvNew);
         rvNew.setLayoutManager(new GridLayoutManager(getBaseContext(), 1, RecyclerView.HORIZONTAL, false));
-        newAdapter = new NewAdapter(newList);
+//        newAdapter = new NewAdapter(newList);
+        newAdapter = new NewAdapter(newList, new IOnClickItemNew() {
+            @Override
+            public void onClickAddItem(New aNew) {
+//                if (!newListBuy.contains(aNew)){
+//                    newListBuy.add(aNew);
+//                } else {
+//                    New setNew = newListBuy.get(newListBuy.indexOf(aNew));
+//                    setNew
+//                }
+                newListBuy.add(aNew);
+            }
+        });
         rvNew.setAdapter(newAdapter);
     }
 
@@ -99,5 +113,4 @@ public class HomeFragment extends Fragment {
     public Context getBaseContext() {
         return mBase;
     }
-
 }

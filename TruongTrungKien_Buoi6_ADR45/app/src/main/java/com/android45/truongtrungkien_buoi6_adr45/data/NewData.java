@@ -10,9 +10,6 @@ public class NewData {
     List<New> newList;
 
     public List<New> getNewList() {
-//        rvNew = view.findViewById(R.id.rvNew);
-//        rvNew.setLayoutManager(new GridLayoutManager(getBaseContext(), 1, RecyclerView.HORIZONTAL, false));
-
         newList = new ArrayList<>();
         newList.add(new New(R.drawable.chicken, R.drawable.ic_baseline_favorite2_border_24, "Chicken Salad", 4, "7.5"));
         //favor
@@ -22,9 +19,6 @@ public class NewData {
         newList.add(new New(R.drawable.fudgecake, R.drawable.ic_baseline_favorite2_border_24, "Fudge Cake", 4.5F, "6.5"));
         //favor
         newList.add(new New(R.drawable.orangejuice, R.drawable.ic_baseline_favorite2_border_24, "Orange Juice", 4, "3.5"));
-
-//        newAdapter = new NewAdapter(newList);
-//        rvNew.setAdapter(newAdapter);
 
         return newList;
     }

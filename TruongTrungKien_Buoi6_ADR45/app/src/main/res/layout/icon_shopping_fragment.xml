@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125sp"
+    android:layout_margin="7sp"
+    android:background="@drawable/custom_layout_menu2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgFoodShopping"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10sp"
+        android:layout_marginLeft="15sp"
+        android:src="@drawable/chicken" />
+
+    <TextView
+        android:id="@+id/tvNameFoodShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_toRightOf="@id/imgFoodShopping"
+        android:text="Chicken Salad"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameFoodShopping"
+        android:layout_marginLeft="10sp"
+        android:layout_toRightOf="@id/imgFoodShopping"
+        android:src="@drawable/ic_baseline_attach_money_24" />
+
+    <TextView
+        android:id="@+id/tvMoneyShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameFoodShopping"
+        android:layout_toRightOf="@id/imgShopping"
+        android:text="7.5"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rbStarShopping"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgShopping"
+        android:layout_marginLeft="10sp"
+        android:layout_toRightOf="@id/imgFoodShopping"
+        android:numStars="5"
+        android:progressTint="@color/color_progessBar"
+        android:rating="4" />
+
+    <ImageView
+        android:id="@+id/imgRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/tvQuantity"
+        android:src="@drawable/ic_baseline_remove_24" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="30sp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/imgAdd"
+        android:background="@drawable/custom_layout_menu2"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_baseline_add_24" />
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15sp"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+</RelativeLayout>

@@ -10,7 +10,6 @@ import androidx.databinding.DataBindingUtil;
 
 import com.android45.truongtrungkien_buoi6_adr45.R;
 import com.android45.truongtrungkien_buoi6_adr45.databinding.ActivityMainBinding;
-import com.android45.truongtrungkien_buoi6_adr45.fragment.FragmentActivity;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding activityMainBinding;

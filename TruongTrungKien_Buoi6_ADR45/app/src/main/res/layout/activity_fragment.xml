@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".activity.MainActivity">
+        tools:context=".activity.FragmentActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                     android:src="@drawable/ic_baseline_assignment_24" />
 
                 <ImageView
-                    android:id="@+id/imgCart"
+                    android:id="@+id/imgShopping"
                     android:layout_width="0sp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
