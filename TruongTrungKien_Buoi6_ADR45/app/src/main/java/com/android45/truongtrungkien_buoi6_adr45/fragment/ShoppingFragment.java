@@ -34,4 +34,6 @@ public class ShoppingFragment extends Fragment {
         shoppingFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.shopping_fragment, container, false);
         return shoppingFragmentBinding.getRoot();
     }
+
+
 }

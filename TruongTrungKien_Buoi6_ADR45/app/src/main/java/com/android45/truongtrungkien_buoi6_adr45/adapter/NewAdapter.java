@@ -23,9 +23,12 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.Viewholder> {
     List<New> newList;
     IOnClickItemNew iOnClickItemNew;
 
-    public NewAdapter(List<New> newList, IOnClickItemNew iOnClickItemNew) {
-        this.newList = newList;
+    public void setiOnClickItemNew(IOnClickItemNew iOnClickItemNew) {
         this.iOnClickItemNew = iOnClickItemNew;
+    }
+
+    public NewAdapter(List<New> newList) {
+        this.newList = newList;
     }
 
     @NonNull
@@ -46,7 +49,7 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.Viewholder> {
         holder.rbStarNew.setRating(newList.get(position).getRbStarNew());
         holder.tvMoneyNew.setText(newList.get(position).getTvMoneyNew());
 
-//        holder.btnAddFavorite.setOnClickListener(new View.OnClickListener() {
+//        holder.btnAddNew.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
 //                iOnClickItemNew.onClickAddItem(aNew);
@@ -67,7 +70,7 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.Viewholder> {
         TextView tvNameFoodNew;
         RatingBar rbStarNew;
         TextView tvMoneyNew;
-        RelativeLayout btnAddFavorite;
+        RelativeLayout btnAddNew;
 
         public Viewholder(@NonNull View itemView) {
             super(itemView);
@@ -76,7 +79,7 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.Viewholder> {
             tvNameFoodNew = itemView.findViewById(R.id.tvNameFoodNew);
             rbStarNew = itemView.findViewById(R.id.rbStarNew);
             tvMoneyNew = itemView.findViewById(R.id.tvMoneyNew);
-            btnAddFavorite = itemView.findViewById(R.id.btnAddFavorite);
+            btnAddNew = itemView.findViewById(R.id.btnAddNew);
         }
     }
 

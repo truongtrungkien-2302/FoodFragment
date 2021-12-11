@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
@@ -56,27 +57,36 @@ public class HomeFragment extends Fragment {
         view = inflater.inflate(R.layout.home_fragment, container, false);
         addRecycleViewRecommended();
         addRecycleViewNew();
-
+        clickItem();
         return view;
 
+    }
+
+    private void clickItem() {
+//        newAdapter.setiOnClickItemNew(new IOnClickItemNew() {
+//            @Override
+//            public void onClickAddItem(New aNew) {
+//                Toast.makeText(getBaseContext(), aNew.getTvNameFoodNew() + "added to cart", Toast.LENGTH_LONG);
+//            }
+//        });
     }
 
     private void addRecycleViewNew() {
         rvNew = view.findViewById(R.id.rvNew);
         rvNew.setLayoutManager(new GridLayoutManager(getBaseContext(), 1, RecyclerView.HORIZONTAL, false));
-//        newAdapter = new NewAdapter(newList);
-        newAdapter = new NewAdapter(newList, new IOnClickItemNew() {
-            @Override
-            public void onClickAddItem(New aNew) {
-//                if (!newListBuy.contains(aNew)){
-//                    newListBuy.add(aNew);
-//                } else {
-//                    New setNew = newListBuy.get(newListBuy.indexOf(aNew));
-//                    setNew
-//                }
-                newListBuy.add(aNew);
-            }
-        });
+        newAdapter = new NewAdapter(newList);
+//        newAdapter = new NewAdapter(newList, new IOnClickItemNew() {
+//            @Override
+//            public void onClickAddItem(New aNew) {
+////                if (!newListBuy.contains(aNew)){
+////                    newListBuy.add(aNew);
+////                } else {
+////                    New setNew = newListBuy.get(newListBuy.indexOf(aNew));
+////                    setNew
+////                }
+//                newListBuy.add(aNew);
+//            }
+//        });
         rvNew.setAdapter(newAdapter);
     }
 

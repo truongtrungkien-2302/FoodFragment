@@ -3,23 +3,20 @@ package com.android45.truongtrungkien_buoi6_adr45.activity;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
 import com.android45.truongtrungkien_buoi6_adr45.R;
 import com.android45.truongtrungkien_buoi6_adr45.databinding.ActivityFragmentBinding;
-import com.android45.truongtrungkien_buoi6_adr45.databinding.ShoppingFragmentBinding;
 import com.android45.truongtrungkien_buoi6_adr45.fragment.FavortieFragment;
 import com.android45.truongtrungkien_buoi6_adr45.fragment.HomeFragment;
 import com.android45.truongtrungkien_buoi6_adr45.fragment.MenuFragment;
+import com.android45.truongtrungkien_buoi6_adr45.fragment.ProfileFragment;
 import com.android45.truongtrungkien_buoi6_adr45.fragment.ShoppingFragment;
 
 public class FragmentActivity extends AppCompatActivity {
@@ -33,6 +30,13 @@ public class FragmentActivity extends AppCompatActivity {
         activityFragmentBinding = DataBindingUtil.setContentView(this, R.layout.activity_fragment);
 
         getFragment(HomeFragment.newInstance());
+
+        activityFragmentBinding.imgProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragment(ProfileFragment.newInstance());
+            }
+        });
 
         activityFragmentBinding.imgHome.setOnClickListener(new View.OnClickListener() {
             @Override
