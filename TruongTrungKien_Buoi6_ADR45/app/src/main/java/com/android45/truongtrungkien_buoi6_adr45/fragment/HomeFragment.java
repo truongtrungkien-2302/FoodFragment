@@ -1,6 +1,7 @@
 package com.android45.truongtrungkien_buoi6_adr45.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -75,18 +76,6 @@ public class HomeFragment extends Fragment {
         rvNew = view.findViewById(R.id.rvNew);
         rvNew.setLayoutManager(new GridLayoutManager(getBaseContext(), 1, RecyclerView.HORIZONTAL, false));
         newAdapter = new NewAdapter(newList);
-//        newAdapter = new NewAdapter(newList, new IOnClickItemNew() {
-//            @Override
-//            public void onClickAddItem(New aNew) {
-////                if (!newListBuy.contains(aNew)){
-////                    newListBuy.add(aNew);
-////                } else {
-////                    New setNew = newListBuy.get(newListBuy.indexOf(aNew));
-////                    setNew
-////                }
-//                newListBuy.add(aNew);
-//            }
-//        });
         rvNew.setAdapter(newAdapter);
     }
 

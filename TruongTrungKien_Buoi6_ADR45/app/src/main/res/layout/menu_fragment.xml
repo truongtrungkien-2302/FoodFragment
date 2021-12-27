@@ -464,16 +464,16 @@
                         app:layout_constraintStart_toStartOf="@id/doc5"
                         app:layout_constraintTop_toTopOf="@id/ngang7" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/imgAlcohol"
-                        android:layout_width="0sp"
-                        android:layout_height="0sp"
-                        android:layout_margin="8sp"
-                        android:src="@drawable/alcohol"
-                        app:layout_constraintBottom_toBottomOf="@id/ngang8"
-                        app:layout_constraintEnd_toEndOf="@id/doc6"
-                        app:layout_constraintStart_toStartOf="@id/doc5"
-                        app:layout_constraintTop_toTopOf="@id/ngang7" />
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/imgAlcohol"-->
+<!--                        android:layout_width="0sp"-->
+<!--                        android:layout_height="0sp"-->
+<!--                        android:layout_margin="8sp"-->
+<!--                        android:src="@drawable/alcohol"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@id/ngang8"-->
+<!--                        app:layout_constraintEnd_toEndOf="@id/doc6"-->
+<!--                        app:layout_constraintStart_toStartOf="@id/doc5"-->
+<!--                        app:layout_constraintTop_toTopOf="@id/ngang7" />-->
 
                     <TextView
                         android:id="@+id/tvAlcohol"
